@@ -1,4 +1,4 @@
-<img src="./challenges/.github/ignite.png" align="center" />
+<img src="../challenges/.github/ignite.png" align="center" />
 
 </br>
 </br>
