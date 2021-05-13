@@ -1,13 +1,8 @@
-import {
-  createContext,
-  ReactNode,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import { createContext, ReactNode, useContext } from "react";
+import { useEffect, useState } from "react";
 import { api } from "../services/api";
 
-interface Transaction {
+interface ITransaction {
   id: number;
   title: string;
   type: string;
@@ -16,49 +11,47 @@ interface Transaction {
   createdAt: string;
 }
 
-type TransactionInput = Omit<Transaction, "id" | "createdAt">;
+interface ITransactionsContextData {
+  transactions: ITransaction[];
+  createTransaction: (transaction: ITransactionInput) => Promise<void>;
+}
 
-interface TransactionsProviderProps {
+type ITransactionInput = Omit<ITransaction, "id" | "createdAt">;
+
+interface ITransactionProviderProps {
   children: ReactNode;
 }
 
-interface TransactionsContextData {
-  transactions: Transaction[];
-  createTransaction: (transaction: TransactionInput) => Promise<void>;
-}
+const TransactionsContext = createContext<ITransactionsContextData>({} as ITransactionsContextData);
 
-const TransactionsContext = createContext<TransactionsContextData>(
-  {} as TransactionsContextData
-);
-
-export function TransactionsProvider({ children }: TransactionsProviderProps) {
-  const [transactions, setTransactions] = useState<Transaction[]>([]);
-
+export function TransactionsProvider({ children }: ITransactionProviderProps) {
+  const [transactions, setTransactions] = useState<ITransaction[]>([]);
   useEffect(() => {
-    api
-      .get("transactions")
-      .then((response) => setTransactions(response.data.transactions));
+    api.get('/transactions')
+      .then(response => setTransactions(response.data.transactions));
   }, []);
-
-  async function createTransaction(transactionInput: TransactionInput) {
-    const response = await api.post("/transactions", {
+  const createTransaction = async (transactionInput: ITransactionInput) => {
+    const response = await api.post('/transactions', {
       ...transactionInput,
       createdAt: new Date(),
     });
     const { transaction } = response.data;
-
-    setTransactions([...transactions, transaction]);
-  }
-
+    setTransactions([
+      ...transactions,
+      transaction,
+    ]);
+  };
   return (
-    <TransactionsContext.Provider value={{ transactions, createTransaction }}>
+    <TransactionsContext.Provider value={{
+      transactions,
+      createTransaction
+    }}>
       {children}
     </TransactionsContext.Provider>
   );
-}
+};
 
 export function useTransactions() {
   const context = useContext(TransactionsContext);
-
   return context;
-}
+};
