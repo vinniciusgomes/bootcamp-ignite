@@ -1,19 +1,31 @@
-<img src="./.github/ignite.png" align="center" />
+<img alt="ignite-reactjs" title="ignite-reactjs" src=".github/cover-reactjs.png">
 
-</br>
+<h1 align="center">
+  Desafios Ignite
+</h1>
 
-<h1 align="center">🚀 Ignite Challenges React</h1>
-<p align="center">Challenges of the React Track from the Ignite Bootcamp provided by @Rocketseat.</p>
+## Índice de desafios
 
-## 💡 What is it?
-The challenges from the React track from the Ignite Bootcamp provided by @Rocketseat. All the challenges will be here, to view one of them you'll need to install all the others.
+### Chapter I
 
-## 🖥 Setup
-- Clone the repository
-- Enter the challenge folder you want
-- Run `npm install` to install dependecies
-- Run `npm run dev` to run the project
+- [Desafio 01 - Conceitos do React](https://github.com/FelipeBrenner/ignite-reactjs-desafios/tree/main/chapter-I-desafio-01-conceitos-do-react)
+- [Desafio 02 - Componentizando a aplicação](https://github.com/FelipeBrenner/ignite-reactjs-desafios/tree/main/chapter-I-desafio-02-componentizando-a-aplicacao)
 
-## 🚧 Built With
-- ReactJS
-- TypeScript
+### Chapter II
+
+- [Desafio 01 - Criando um hook de carrinho de compras](https://github.com/FelipeBrenner/ignite-reactjs-desafios/tree/main/chapter-II-desafio-01-criando-um-hook-de-carrinho-de-compras)
+- [Desafio 02 - Refactoring de classes e TypeScript](https://github.com/FelipeBrenner/ignite-reactjs-desafios/tree/main/chapter-ll-desafio-02-refactoring-classes-ts)
+
+### Chapter III
+
+- [Desafio 01 - Criando uma aplicação do zero](https://github.com/FelipeBrenner/ignite-reactjs-desafios/tree/main/chapter-III-desafio-01-criando-um-projeto-do-zero)
+- [Desafio 02 - Adicionando features ao blog](https://github.com/FelipeBrenner/ignite-reactjs-desafios/tree/main/chapter-III-desafio-02-adicionando-features-ao-blog)
+
+### Chapter IV
+
+- [Desafio 01 - Interface com Chakra UI](https://github.com/FelipeBrenner/ignite-reactjs-desafios/tree/main/chapter-IV-desafio-01-interface-com-chakra-ui)
+- [Desafio 02 - Upload de imagens](https://github.com/FelipeBrenner/ignite-reactjs-desafios/tree/main/chapter-IV-desafio-02-upload-de-imagens)
+
+### Chapter V
+
+- [Desafio 01 - Otimizando a aplicação](https://github.com/FelipeBrenner/ignite-reactjs-desafios/tree/main/chapter-V-desafio-01-otimizando-a-aplicacao)
