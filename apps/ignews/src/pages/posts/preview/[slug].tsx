@@ -5,6 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { RichText } from "prismic-dom";
 import { useEffect } from "react";
+
 import { getPrismicClient } from "../../../services/prismic";
 import styles from '../post.module.scss';
 
@@ -66,7 +67,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const prismic = getPrismicClient();
   
-  const response = await prismic.getByUID('publication', String(slug), {});
+  const response = await prismic.getByUID('post', String(slug), {});
 
   const post = {
     slug,
