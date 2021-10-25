@@ -1,21 +1,68 @@
-<img src="../challenges/.github/ignite.png" align="center" />
+<p align="center">
+   <img src="./.github/logo.svg" alt="Move It" width="300"/>
+</p>
 
-</br>
-</br>
+<p align="center">
+  :moneybag: Manage your money. Project developed during the second Bootcamp Ignite module | <a href="https://github.com/Rocketseat">@Rocketseat</a>
+</p>
 
-<h1 align="center">📑 DtMoney Ignite</h1>
-<p align="center">DtMoney application made in the second module of the Ignite Bootcamp provided by @Rocketseat in the React Track.</p>
+<div align="center">
+  <sub> Made with 💖 by
+    <a href="https://github.com/vinniciusgomes">Vinnicius Gomes.
+  </sub>
+</div>
 
-## 💡 What is it?
-DtMoney is a project made in the second module of the Ignite Bootcamp providaded by @Rocketseat, i'm coursing the React track, where in the second module called 'First Web Application with ReactJS', we create a simple application to learn more about React. In this application the user can register a transaction and view his registered expenses.
+# 📌 Contents
 
-## 🖥 Setup
-- Clone the repository
-- Run `npm install` to install dependecies
-- Run `npm run dev` to run the project
+* [Screenshots](#camera-screenshot) 
+* [Technologies](#rocket-technologies) 
+* [How to Run](#computer-how-to-run)
+* [Issues](#bug-issues)
+* [Contributing](#sparkles-issues)
+* [License](#page_facing_up-license)
 
-## 🚧 Built With
-- ReactJS
-- TypeScript
-- Styled Components
-- MirageJS
+# :camera: Screenshots
+<div align="center">
+   <img src="./.github/screen1.png" width="400px">
+   <img src="./.github/screen2.png" width="400px">
+   <img src="./.github/screen3.png" width="400px">
+   <img src="./.github/screen4.png" width="400px">
+</div>
+
+# :rocket: Technologies
+This project was made using the follow technologies:
+
+* [Typescript](https://www.typescriptlang.org/)      
+* [React](https://reactjs.org/)      
+* [Styled Components](https://styled-components.com/)
+* [MirageJS](https://miragejs.com/)
+
+# :computer: How to run
+
+```bash
+# Clone Repository
+$ git clone https://github.com/vinniciusgomes/bootcamp-ignite.git
+```
+
+```bash
+# Install Dependencies
+$ yarn
+
+# Run Aplication
+$ yarn start
+```
+Go to http://localhost:3000/ to see the result.
+
+# :sparkles: Contributing
+
+- Fork this repository;
+- Create a branch with your feature: `git checkout -b my-feature`;
+- Commit your changes: `git commit -m 'feat: My new feature'`;
+- Push to your branch: `git push origin my-feature`.
+
+# :page_facing_up: License
+
+This project is under the [MIT license](./LICENSE).
+Made with 💖 by [Vinnicius Gomes](https://www.linkedin.com/in/vinniciusgomes/). 
+
+Thank you! 🌠
